@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information for inquiries about seating furniture and interior design information.">
+    <title>Contact - Sofa Couture Information</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">Sofa Couture</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <div class="container boxed">
+                <h1>Contact Information</h1>
+                <p>For inquiries about specific information topics, clarification of content, or suggestions for additional material, please use the contact form below or reach out through the provided contact details.</p>
+
+                <div class="contact-layout">
+                    <div class="contact-form-wrapper">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-details">
+                        <h2>Contact Details</h2>
+                        <div class="detail-block">
+                            <h3>Address</h3>
+                            <p>1187 West Elm Street, Suite 4<br>Boise, ID 83702<br>United States</p>
+                        </div>
+                        <div class="detail-block">
+                            <h3>Phone</h3>
+                            <p>+1 (208) 555-0193</p>
+                        </div>
+                        <div class="detail-block">
+                            <h3>Email</h3>
+                            <p>contact@sofacouture.com</p>
+                        </div>
+                        <div class="detail-block">
+                            <h3>Business Hours</h3>
+                            <p>Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-image">
+                    <img src="images/contact-interior.jpg" alt="Modern interior design consultation space">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Sofa Couture</h3>
+                    <p>Information resource about seating furniture, materials, and interior design considerations for residential spaces.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="info.html">Information</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>1187 West Elm Street, Suite 4<br>Boise, ID 83702<br>United States</p>
+                    <p>Phone: +1 (208) 555-0193<br>Email: contact@sofacouture.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sofa Couture. All rights reserved.</p>
+                <p class="disclaimer-note">The content is provided for informational purposes only and does not constitute a recommendation, guidance, or professional advice.</p>
+            </div>
+        </div>
+    </footer>
+
+<div class="cookie-banner cookie-banner-bottom-left" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Notice" aria-modal="true">
+  <div class="cookie-top">
+    <div class="cookie-badge">
+      <img src="images/icon-placement.jpg" alt="" aria-hidden="true" class="cookie-badge-img">
+    </div>
+    <div class="cookie-copy">
+      <p class="cookie-title">Cookie Notice</p>
+      <p class="cookie-text">
+        This website uses only strictly necessary cookies required for the basic operation and proper display of the site. These cookies do not collect personal data and are not used for analytics, tracking, advertising, or marketing purposes.
+      </p>
+      <p class="cookie-links">
+        More information:
+        <a href="privacy-policy.html" class="cookie-link"><br>Privacy Policy</a>
+        <span class="cookie-sep">•</span>
+        <a href="cookie-policy.html" class="cookie-link">Cookie Policy</a>
+      </p>
+    </div>
+  </div>
+  <div class="cookie-actions">
+    <button id="cookieRejectBtn" type="button" class="cookie-btn cookie-btn-secondary">Close</button>
+    <button id="cookieAcceptBtn" type="button" class="cookie-btn cookie-btn-primary">OK</button>
+  </div>
+</div>
+
+<script src="js/cookie.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'thank-you.html';
+        });
+    </script>
+</body>
+</html>
